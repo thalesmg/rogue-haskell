@@ -1,0 +1,26 @@
+name:                rogue-brick
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/thalesmg/rogue-brick#readme
+license:             BSD3
+author:              Thales Macedo Garitezi
+maintainer:          thalesmg@gmail.com
+copyright:           GPL3
+category:            Web
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - brick
+  - lens
+  - vector
+  - vty
+
+executables:
+  rogue-brick:
+    source-dirs:      src
+    main:             Main.hs
+    ghc-options:
+      - -threaded

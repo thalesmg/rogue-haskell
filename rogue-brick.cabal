@@ -1,0 +1,35 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: be33dc6cb621bda269d8bc467d497fff0307fd41ce86382055da1bbae2a2899c
+
+name:           rogue-brick
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/thalesmg/rogue-brick#readme
+author:         Thales Macedo Garitezi
+maintainer:     thalesmg@gmail.com
+copyright:      GPL3
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable rogue-brick
+  main-is: Main.hs
+  other-modules:
+      Paths_rogue_brick
+  hs-source-dirs:
+      src
+  ghc-options: -threaded
+  build-depends:
+      base >=4.7 && <5
+    , brick
+    , lens
+    , vector
+    , vty
+  default-language: Haskell2010
